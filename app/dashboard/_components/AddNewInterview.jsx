@@ -160,6 +160,11 @@ const AddNewInterview = () => {
                       }}
                     />
                   </div>
+                  <form action="/upload">
+                    <button>
+                      <input type="file" name="profileImage" />
+                    </button>
+                  </form>
                 </div>
                 <div className="flex gap-5 justify-end">
                   <Button
@@ -167,6 +172,9 @@ const AddNewInterview = () => {
                     variant="ghost"
                     onClick={() => setOpenDailog(false)}
                   >
+
+                  {/* add resume */}
+
                     Cancel
                   </Button>
                   <Button type="submit" disabled={isLoading}>
